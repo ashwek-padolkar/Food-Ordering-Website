@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="app.js"></script>
+</head>
+
+<body>
+
+  <section class="home">
+    <a href="" name="home"></a>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/nvnci0ey-Photoroom.png-Photoroom.png" alt="">
+        </div>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu" onclick="scrollToSection('menu')">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="modes">
+          <div class="cart_div">
+            <img src="images/cart.png">
+          </div>
+
+
+          <div class="night-mode">
+            <img src="images/4300715-200.png">
+          </div>
+
+          <div class="order-btn">
+            <a href="#menu"><input type="button" value="ORDER NOW"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home-body">
+      <div class="home-left">
+        <div class="theme_content">
+          <div class="content">
+            <div class="slogan" id="slogan">
+              <span>O</span><span>r</span><span>d</span><span>e</span><span>r</span><span>&nbsp;</span><span>Y</span><span>o</span><span>u</span><span>r</span><span>&nbsp;</span>
+              <br>
+              <span>F</span><span>a</span><span>v</span><span>o</span><span>u</span><span>r</span><span>i</span><span>t</span><span>e</span><span>&nbsp;</span><span>M</span><span>e</span><span>a</span><span>l</span>
+            </div>
+            <p>Enjoy Fresh and Delicious Food in the Heart of Downtown!</p>
+            <a href="#" class="cta-button">Explore Our Menu</a>
+            <a href="#" class="cta-button2">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-right">
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="offers">
+    <div class="offers-container">
+      <!-- <center><div class="headings"><h2>Menu</h2></div></center> -->
+
+      <div class="offers-slider">
+        <div class="offer-img">
+          <img src="images/15836836_Food-Facebook-Cover-Banner-19-01.jpeg" alt="">
+        </div>
+
+        <div class="offer-img">
+          <img src="images/15950658_Food-Facebook-Cover-Banner-04-01.jpeg" alt="">
+        </div>
+
+        <div class="offer-img">
+          <img src="images/15950701_Food-Facebook-Cover-Banner-09-02~3.jpeg" alt="">
+        </div>
+
+        <div class="offer-img">
+          <img src="images/15836786_Food-Facebook-Cover-Banner-09-01.jpeg" alt="">
+        </div>
+      </div>
+      <button class="prev" onclick="moveOffers(-1)">&#10094;</button>
+      <button class="next" onclick="moveOffers(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="menu">
+
+    <a href="" name="menu"></a>
+
+    <div class="menu-bg">
+      <div class="menu-wrapper">
+        <div class="menu-container">
+          <center>
+            <div class="headings">
+              <h2>OUR MENU</h2>
+            </div>
+          </center>
+
+          <div class="categories-border">
+            <div class="categories">
+              <div class="browse">
+                <h3>Browse Categories :</h3>
+              </div>
+              <div class="category active" onclick="filterItems('appetizers')">
+                <p>Appetizers</p>
+              </div>
+              <div class="category" onclick="filterItems('main-course')">
+                <p>Main-Course</p>
+              </div>
+              <div class="category" onclick="filterItems('desserts')">
+                <p>Desserts</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Appetizers -->
+          <div class="cards">
+            <div class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="appetizers" class="menu-item" style="display: block">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918134.jpg" alt="">
+              </div>
+              <div <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Main Coarse -->
+          <div class="cards">
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+
+            <div id="main-course" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/5603891_2918135.jpg" alt="">
+              </div>
+              <div class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Desserts -->
+
+          <div class="cards">
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+
+            <div id="desserts" class="menu-item">
+              <div class="menu-item-img">
+                <img src="images/1000056855-01.jpeg" alt="dish">
+              </div>
+              <dv class="menu-item-info">
+                <center>
+                  <h3 class="menu-item-title">Dish Name</h3>
+                </center>
+                <center>
+                  <p class="menu-item-description">Lorem ipsum dolor sit amet, consectetur</p>
+                </center>
+                <center><span class="menu-item-price">$10.99</span></center>
+              </dv>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <br><br><br><br>
+  </section>
+
+  <section class="about">
+    <div class="about-container">
+      <a href="" name="about"></a>
+      <div class="about-body">
+        <div class="about-left">
+
+        </div>
+        <div class="about-right">
+          <div class="content">
+            <center>
+              <h2>ABOUT US</h2>
+            </center>
+            <br>
+            <center>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officia omnis reiciendis iste quod exewrd
+                ea suscipit sit eaque eos cumque quia id natus possimus, non esse ut tenetur voluptatem impedit
+                voluptates harum at dignissimos quasi eligendi? Eligendi minima nihil.</p>
+            </center>
+            <div class="buttons">
+              <a href="#" class="cta-button">Services</a>
+              <a href="#" class="cta-button2">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br>
+
+  <a href="" name="testimonials"></a>
+
+  <section class="testimonials">
+    <div class="testimonial-border">
+      <div class="testimonial-container">
+        <div class="top">
+          <center>
+            <div class="headings">
+              <h2>TESTIMONIALS</h2>
+            </div>
+          </center>
+          <div class="top-bg">
+            <div class="testimonial-content">
+              <center>
+                <h3>What Our Customers Say?</h3>
+              </center>
+              <div class="testimonial-slider">
+                <div class="testimonial">
+                  <div class="author-img">
+                    <img src="images/KV-author-photo.jpg" alt="" height="80px" width="80px">
+                  </div>
+                  <div class="testimonial-author">
+                    <center>
+                      <p>Sweety Doe</p>
+                    </center>
+                  </div>
+                  <div class="testimonial-text">
+                    <center>
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi eget ipsum dignissim
+                        luctus."</p>
+                    </center>
+                  </div>
+                  <div class="stars">
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="off">&starf;</span>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="author-img">
+                    <img src="images/men.jpg" alt="" height="80px" width="80px">
+                  </div>
+                  <div class="testimonial-author">
+                    <center>
+                      <p>Mac Laye</p>
+                    </center>
+                  </div>
+                  <div class="testimonial-text">
+                    <center>
+                      <p>"Manj ultricies dui nec nulla commodo, nec tempus arcu fermentum."</p>
+                    </center>
+                  </div>
+                  <div class="stars">
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="author-img">
+                    <img src="images/KV-author-photo.jpg" alt="" height="80px" width="80px">
+                  </div>
+                  <div class="testimonial-author">
+                    <center>
+                      <p>Jane Smith</p>
+                    </center>
+                  </div>
+                  <div class="testimonial-text">
+                    <center>
+                      <p>"Suspendisse ultricies dui nec nulla commodo, nec tempus arcu fermentum."</p>
+                    </center>
+                  </div>
+                  <div class="stars">
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="off">&starf;</span>
+                    <span class="off">&starf;</span>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="author-img">
+                    <img src="images/men.jpg" alt="" height="80px" width="80px">
+                  </div>
+                  <div class="testimonial-author">
+                    <center>
+                      <p>Steven Haugh</p>
+                    </center>
+                  </div>
+                  <div class="testimonial-text">
+                    <center>
+                      <p>"Haulot ultricies dui nec nulla commodo, nec tempus arcu fermentum."</p>
+                    </center>
+                  </div>
+                  <div class="stars">
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                  </div>
+                </div>
+                <div class="testimonial">
+                  <div class="author-img">
+                    <img src="images/KV-author-photo.jpg" alt="" height="80px" width="80px">
+                  </div>
+                  <div class="testimonial-author">
+                    <center>
+                      <p>Brian Cham</p>
+                    </center>
+                  </div>
+                  <div class="testimonial-text">
+                    <center>
+                      <p>"Chain ultricies dui nec nulla commodo, nec tempus arcu fermentum."</p>
+                    </center>
+                  </div>
+                  <div class="stars">
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="on">&starf;</span>
+                    <span class="off">&starf;</span>
+                  </div>
+                </div>
+              </div>
+              <button class="prev" onclick="moveTestimonial(-1)">&#10094;</button>
+              <button class="next" onclick="moveTestimonial(1)">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+  </section>
+
+  <br><br><br><br>
+  <!-- Contact -->
+
+  <section class="contact">
+    <a href="" name="contact"></a>
+
+    <div class="contact-container">
+      <div class="contact-heading">
+          <div class="headings">
+            <center>
+              <h2>CONTACT US</h2>
+            </center>
+          </div>
+        <br>
+      </div>
+      <div class="contact-top">
+        <div class="contact-left">
+          <div class="contact-left-box">
+            <div class="info">
+              <div class="contact-img">
+                <img src="images/map-pin.svg" alt="map">
+              </div>
+              <div class="contact-desc">
+                <h3>Location</h3>
+                <p>Lorem ipsum, dolor </p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="contact-img">
+                <img src="images/phone-call.svg" alt="mail">
+              </div>
+              <div class="contact-desc">
+                <h3>Phone</h3>
+                <p>+91 9853626172</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="contact-img">
+                <img src="images/mail.svg" alt="mail">
+              </div>
+              <div class="contact-desc">
+                <h3>Email</h3>
+                <p>www.visit@foodbar.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div id="form">
+            <br>
+            <h3>Send Message</h3>
+            <br>
+            <div class="box">
+              <div class="input_data">
+                <input type="textbox">
+                <div class="underline"></div>
+                <label>Name</label>
+              </div>
+            </div>
+            <br><br>
+            <div class="box">
+              <div class="input_data">
+                <input type="textbox">
+                <div class="underline"></div>
+                <label>Email</label>
+              </div>
+            </div>
+            <br><br>
+            <div class="box">
+              <div class="input_data_help">
+                <textarea name="" id="" cols="30" rows="8"></textarea>
+                <div class="underline"></div>
+                <label>How can we help?</label>
+              </div>
+            </div>
+            <br><br><br><br><br>
+            <input type="submit" id="submit" value="SUBMIT">
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-theme">
+
+    </div>
+  </section>
+
+  <!-- Footer Bar -->
+  <section id="footer">
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>download our app</h3>
+            <p>download our app for android and IOS</p>
+            <div class="app-logo">
+              <a href="https://play.google.com/store/apps/details?id=com.flipkart.android">
+                <img src="images/play-store.png">
+              </a>
+              <img src="images/app-store.png">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <p>our purpose is to sustainably make the plesure and benefits of accessible to the user</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>useful links</h3>
+            <ul>
+              <li>coupons</li>
+              <li>blog post</li>
+              <li>return policy</li>
+              <li>join affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>follow us</h3>
+            <ul>
+              <li>facebook</li>
+              <li>twitter</li>
+              <li>instagram</li>
+              <li>youtube</li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">copyright none</p>
+      </div>
+    </div>
+
+  </section>
+</body>
+
+</html>
