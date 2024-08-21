@@ -1285,13 +1285,13 @@ button.next {
 
   .contact {
     height: 110vh;
-    background: url("images/21159-02.jpeg");
+    /* background: url("images/21159-02.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
 
   .contact-container {
-    background-color: #0000006e;
+    /* background-color: #0000006e; */
   }
 
   .contact .headings {
@@ -1314,6 +1314,7 @@ button.next {
   .contact-heading {
     padding: 3% 2% 0 2%;
     text-align: center;
+    background-color: #0000009c;
   }
   
   .contact-heading h2 {
@@ -1323,13 +1324,15 @@ button.next {
     letter-spacing: 0.1em;
   }
   
-  .contact-heading p {
+  /* .contact-heading p {
     color: rgb(255, 255, 255);
     font-size: 20px;
-  }
+  } */
   
   .contact-container {
-    /* background-color: rgba(0, 0, 0, 0.781); */
+    background-image: url("images/6864935_23322.jpg");
+    background-position: center;
+    background-size: cover;
   }
   
   .contact-top {
@@ -1338,13 +1341,16 @@ button.next {
     /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
+    background-color: #0000009c;
   }
   
   .contact-left {
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    /* background: #000; */
   }
 
   .contact-left-box {
@@ -1352,16 +1358,19 @@ button.next {
     padding: 20px 0px;
     background: #0000005b;
     box-shadow: inset 1px 5px 15px 15px rgb(21, 21, 21);
+    margin-top: 70px;
   }
 
   .contact-right {
     width: 50%;
-    height: 60%;
+    height: 100%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-top: 110px;
     /* margin-bottom: 20px; */
+    /* background: #000; */
   }
   
   .info {
@@ -1389,9 +1398,10 @@ button.next {
     height: 45px;
     border: 0px solid black;
     border-radius: 36%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     margin-left: 30px;
     padding: 10px;
+    background: linear-gradient( 90deg, rgb(63, 232, 238), rgb(147, 221, 220), rgb(97, 177, 248));
   }
   
   .contact-img img {
@@ -1499,10 +1509,10 @@ button.next {
     width: 150px;
     border: none;
     border-radius: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     letter-spacing: 2px;
-    background: linear-gradient(-135deg, #383838, #000000);
+    background: linear-gradient( 90deg, rgb(63, 232, 238), rgb(147, 221, 220), rgb(97, 177, 248));
     color: white;
   }
   
@@ -1517,21 +1527,34 @@ button.next {
   
   @media (max-width: 800px) {
     .contact {
-      height: 140vh;
+      height: 150vh;
+    }
+
+    .contact-container {
+      height: 100%;
     }
 
     .contact-top {
-      height: 950px;
+      height: 170vh;
       flex-direction: column;
       gap: 0%;
     }
 
+    .contact-left {
+      height: 70vh;
+      align-items: start;
+      margin-top: 20px;
+    }
+
     .contact-left-box {
       width: 340px;
+      margin: 0%;
     }
 
     .contact-right {
       width: 340px;
+      align-items: start;
+      margin-top: 50px;
     }
   }
 
