@@ -15,7 +15,7 @@ function moveOffers(n) {
   offersSlider.style.transform = `translateX(${-offersWidth * offersIndex}px)`;
 }
 
-// Resize event listener to handle screen size changes
+// Recalculate the width of offersWidth when window size changes
 window.addEventListener('resize', () => {
   const offersSlider = document.querySelector('.offers-slider');
   const offersWidth = document.querySelector('.offer-img').offsetWidth;
@@ -41,7 +41,7 @@ function moveTestimonial(n) {
 }
 
 window.addEventListener('resize', () => {
-  // Recalculate the width of testimonials and apply the correct transform
+  // Recalculate the width of testimonialWidth when window size changes
   const testimonials = document.querySelectorAll('.testimonial');
   const slider = document.querySelector('.testimonial-slider');
   const testimonialWidth = testimonials[0].offsetWidth;
@@ -75,19 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-// Slogan
-// const slogan = document.getElementById('slogan');
-// const letters = slogan.querySelectorAll('span');
-
-// let index = 0;
-
-// function revealLetters() {
-//   if(index < letters.length) {
-//     letters[index].style.opacity = 1;
-//     index++;
-//     setTimeout(revealLetters, 100);
-//   }
-// }
-
-// window.onload = revealLetters;

@@ -1513,15 +1513,16 @@ button.next {
     font-size: 18px;
     letter-spacing: 2px;
     background: linear-gradient( 90deg, rgb(63, 232, 238), rgb(147, 221, 220), rgb(97, 177, 248));
-    color: white;
+    color: black;
   }
   
   #submit:hover {
     transform: scale(1.1);
+    background: linear-gradient(-135deg, #51ff3e, #e0f5e2);
   }
   
   #submit:focus {
-    background: linear-gradient(-135deg, #81ff73, #28ff3a);
+    background: linear-gradient(-135deg, #51ff3e, #e0f5e2);
     color: black;
   }
   
